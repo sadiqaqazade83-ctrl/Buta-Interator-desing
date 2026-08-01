@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="tutor" content="BUTA INTERIOR DESIGN">
+    <title>BUTA INTERIOR DESIGN</title>
+    <link rel="stylesheet" href="Haqqımızda.js">
+    <link rel="stylesheet" href="css/Haqqımızda.css">
+    <link rel="icon" type="image/x-icon" href="photo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<div id="lightbox">
+    <img id="lightbox-img">
+</div>
+
+<script>
+    const images = document.querySelectorAll(".gallery img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    images.forEach(img => {
+        img.onclick = () => {
+            lightbox.style.display = "flex";
+            lightboxImg.src = img.src;
+        };
+    });
+
+    lightbox.onclick = () => {
+        lightbox.style.display = "none";
+    };
+</script>
+
+<body>
+    <header>
+
+        <div id="logo">
+            <img src="photo/logo1.png" alt="Logo">
+
+            <div>
+                <h2>BUTA</h2>
+                <h4>INTERIOR <span>DESIGN</span></h4>
+            </div>
+        </div>
+
+        <nav id="cnav">
+            <ul>
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a class="nav" href="Haqqımızda.html">Haqqımızda</a></li>
+                <li><a href="Müsahibə.html">Müsahibələr</a></li>
+                <li><a href="Layihələr.html">Layihələr</a></li>
+                <li><a href="İnformativ-materiallar.html">İnformativ materiallar</a></li>
+                <li><a href="Əlaqə-saxlayın.html">Müraciət edin</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="menu">
+
+        <label for="menu" class="menu-btn">☰</label>
+
+        <nav class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="sidebar-logo">
+
+                    <img src="photo/logo1.png" alt="Logo">
+
+                    <div>
+                        <h2>BUTA</h2>
+                        <h4>INTERIOR <span>DESIGN</span></h4>
+                    </div>
+
+                </div>
+
+                <label for="menu" class="close-btn">✕</label>
+
+            </div>
+
+            <a href="index.html">Ana səhifə</a>
+            <a class="nav" href="Haqqımızda.html">Haqqımızda</a>
+            <a href="Müsahibə.html">Müsahibələr</a>
+            <a href="Layihələr.html">Layihələr</a>
+            <a href="İnformativ-materiallar.html">İnformativ materiallar</a>
+            <a href="Əlaqə-saxlayın.html">Müraciət edin</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="gallery">
+
+            <div>
+                <img src="photo/kataloq/page-02.png" alt="BUTA Interior Design kataloq səhifə 2">
+                <img src="photo/kataloq/page-03.png" alt="BUTA Interior Design kataloq səhifə 3">
+            </div>
+
+            <div>
+                <img src="photo/kataloq/page-04.png" alt="BUTA Interior Design kataloq səhifə 4">
+                <img src="photo/kataloq/page-05.png" alt="BUTA Interior Design kataloq səhifə 5">
+            </div>
+
+            <div>
+                <img src="photo/kataloq/page-06.png" alt="BUTA Interior Design kataloq səhifə 6">
+                <img src="photo/kataloq/page-07.png" alt="BUTA Interior Design kataloq səhifə 7">
+            </div>
+
+            <div>
+                <img src="photo/kataloq/page-08.png" alt="BUTA Interior Design kataloq səhifə 8">
+                <img src="photo/kataloq/page-09.png" alt="BUTA Interior Design kataloq səhifə 9">
+            </div>
+
+            <div>
+                <img src="photo/kataloq/page-10.png" alt="BUTA Interior Design kataloq səhifə 10">
+                <img src="photo/kataloq/page-11.png" alt="BUTA Interior Design kataloq səhifə 11">
+            </div>
+
+            <div>
+                <img src="photo/kataloq/page-12.png" alt="BUTA Interior Design kataloq səhifə 12">
+                <img src="photo/kataloq/page-13.png" alt="BUTA Interior Design kataloq səhifə 13">
+            </div>
+
+            <div>
+                <img src="photo/kataloq/page-14.png" alt="BUTA Interior Design kataloq səhifə 14">
+                <img src="photo/kataloq/page-15.png" alt="BUTA Interior Design kataloq səhifə 15">
+            </div>
+
+            <div>
+                <img src="photo/kataloq/page-16.png" alt="BUTA Interior Design kataloq səhifə 16">
+                <img src="photo/kataloq/page-17.png" alt="BUTA Interior Design kataloq səhifə 17">
+            </div>
+
+        </section>
+
+        <section id="sual">
+            <h2 id="tez">Niyə Buta?</h2>
+            <details>
+                <summary>
+                    Bizi Dizayn və Xidmət Sferasında nə ferqlendirir
+                </summary>
+                <p>
+
+                    Fərdi və Funksional Yanaşma: Hər bir məkanı yalnız estetik deyil, həm də sizin həyat tərzinizə və
+                    ehtiyaclarınıza uyğun, maksimum səmərəli şəkildə layihələndiririk.<br><br>
+
+                    Minimalist və Müasir Həllər: Məkanın ölçüsündən asılı olmayaraq, erqonomik və nəfəs alan dizayn
+                    anlayışı ilə rahatlıq yaradırıq.<br><br>
+
+                    Açar Təhvil Vəd: Konsepsiyadan başlayaraq son detallara qədər bütün prosesi dəqiqliklə idarə edir,
+                    vaxtınıza və büdcənizə qənaət edirik.<br><br>
+
+                    Şəffaflıq və Keyfiyyət: Material seçimindən icraya kadar hər mərhələdə dürüstlük və yüksək keyfiyyət
+                    standartlarını əsas tuturuq.<br><br>
+
+                    Təcrübəli Komanda: Sahəsində mütəxəssis olan peşəkar komandamızla layihələrinizə dəyər
+                    qatırıq.<br><br>
+
+                    Nəticəyə Yönümlü Strategiya: Biz sadəcə xidmət göstərmirik; biznesinizin böyüməsinə və
+                    effektivliyinin artmasına töhfə verən həllər təklif edirik.<br><br>
+
+                    Innovativ və Müasir Metodlar: Ən son sənaye standartlarını və müasir yanaşmaları tətbiq edərək
+                    işinizi irəliyə aparırıq.<br><br>
+
+                    Davamlı Dəstək: Əməkdaşlığımız yalnız layihə bitənə qədər deyil — biz hər zaman tərəfdaşlarımızın
+                    yanındayıq.
+                </p>
+            </details>
+
+        </section>
+
+
+        <section id="sual">
+
+            <h2 id="tez">Buta İnteryer Dizayn Xidmətləri Üzrə Əməkdaşlıq Şərtləri</h2>
+
+            <details>
+                <summary>Müqavilənin Mövzusu və İşin Həcmi</summary>
+                <p>
+                    Dizayner, müştərinin təqdim etdiyi texniki tapşırıq (bəyənilən üslub, rəng palitrası və ehtiyaclar)
+                    əsasında interyer dizayn layihəsini hazırlamağı öhdəsinə götürür.<br><br>
+
+                    İşin həcminə (seçilən paketə uyğun olaraq): planlaşdırma həlləri (layout), 3D vizuallaşdırma
+                    (render),
+                    işçi cizgilər və material siyahısı daxildir.<br><br>
+
+                    Sahənin ölçülərinin dəqiq götürülməsi dizayner (və ya şirkətin mütəxəssisi) tərəfindən həyata
+                    keçirilir.
+                    Müştəri tərəfindən verilən ölçülərdə xəta olarsa, dizayner məsuliyyət daşımır.
+                </p>
+            </details>
+
+            <details>
+                <summary>Ödəniş Şərtləri və Mərhələləri</summary>
+                <p>
+                    Layihənin ümumi dəyəri kvadratmetr (m²) əsasında və ya seçilmiş paket qiymətinə uyğun
+                    hesablanır.<br><br>
+
+                    Ödəniş 3 mərhələdə həyata keçirilir:
+                    <br>• 40% – müqavilə imzalandıqdan sonra (beh).
+                    <br>• 40% – 3D render mərhələsinə keçməzdən əvvəl.
+                    <br>• 20% – layihə tam təhvil verilməzdən əvvəl.<br><br>
+
+                    Ödəniş gecikdirilərsə, dizayner işi dayandırmaq və layihənin təhvil müddətini gecikdirilən gün qədər
+                    uzatmaq hüququna malikdir.
+                </p>
+            </details>
+
+            <details>
+                <summary>Dəyişikliklər (Düzəlişlər) və Limitlər</summary>
+                <p>
+                    Təsdiqlənmiş hər mərhələ növbəti mərhələ üçün əsas hesab edilir.<br><br>
+
+                    Müştəri 3D render mərhələsində maksimum <strong>2 dəfə</strong> pulsuz düzəliş etmək hüququna
+                    malikdir.<br><br>
+
+                    Layihə təsdiqləndikdən sonra edilən əsas dəyişikliklər əlavə ödənişlə həyata keçirilir.
+                </p>
+            </details>
+
+            <details>
+                <summary>Müştərinin Öhdəlikləri</summary>
+                <p>
+                    • İstəklərini və büdcəsini əvvəlcədən dəqiq bildirmək.<br>
+                    • Təqdim olunan eskiz və renderlərə maksimum 3 iş günü ərzində rəy vermək.<br>
+                    • Lazımi məlumat və sənədləri vaxtında təqdim etmək.
+                </p>
+            </details>
+
+            <details>
+                <summary>Dizaynerin Öhdəlikləri</summary>
+                <p>
+                    • Layihəni razılaşdırılmış müddətdə hazırlamaq.<br>
+                    • Peşəkar və keyfiyyətli xidmət göstərmək.<br>
+                    • Material və mebel seçimində real bazarda mövcud olan variantları nəzərə almaq.
+                </p>
+            </details>
+
+            <details>
+                <summary>Müəllif Hüquqları və Portfolio</summary>
+                <p>
+                    Hazırlanmış layihənin müəllif hüquqları Buta Interior Design-a məxsusdur.<br><br>
+
+                    Şirkət layihənin renderlərini və həyata keçirilmiş işlərin foto/video görüntülərini
+                    müştərinin məxfiliyini qorumaq şərti ilə portfolio və sosial media hesablarında paylaşa
+                    bilər.<br><br>
+
+                    Müştəri layihənin paylaşılmasını istəmirsə, bu müqavilə bağlanarkən ayrıca qeyd edilməlidir.
+                </p>
+            </details>
+
+            <details>
+                <summary>Layihə Nəzarəti (Müəllif Nəzarəti)</summary>
+                <p>
+                    Layihənin təhvil verilməsi təmir prosesinə nəzarəti əhatə etmir.<br><br>
+
+                    Müəllif nəzarəti (ustaların işinə nəzarət, material seçimi, obyektə baxış və s.)
+                    ayrıca müqavilə və əlavə xidmət haqqı ilə həyata keçirilir.
+                </p>
+            </details>
+
+            <details>
+                <summary>Fors-Major və Müqavilənin Xitamı</summary>
+                <p>
+                    Tərəflərdən asılı olmayan hallar (təbii fəlakət, müharibə, qanunvericilik dəyişiklikləri və s.)
+                    fors-major hesab edilir.<br><br>
+
+                    Müştəri layihəni birtərəfli qaydada dayandırarsa,
+                    həmin vaxta qədər görülmüş işlərə görə ödənilmiş beh geri qaytarılmır.
+                </p>
+            </details>
+        </section>
+
+        <section id="packages">
+
+            <h2>Təmir Paketlərimiz</h2>
+
+            <div class="package-list">
+
+                <div class="package">
+                    <h3>Bronze</h3>
+                    <p>300 AZN</p>
+                </div>
+
+                <div class="package">
+                    <h3>Silver</h3>
+                    <p>350 AZN</p>
+                </div>
+
+                <div class="package">
+                    <h3>Gold</h3>
+                    <p>400 AZN</p>
+                </div>
+
+                <div class="package">
+                    <h3>Platinum</h3>
+                    <p>450 AZN</p>
+                </div>
+
+                <div class="package">
+                    <h3>Diamond</h3>
+                    <p>500 AZN</p>
+                </div>
+
+                <div class="package">
+                    <h3>Royal</h3>
+                    <p>550 AZN</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="download">
+
+            <h2>Danışıq zamanı verilən suallar</h2>
+
+            <p>
+                Müsahibə zamanı istifadə etdiyimiz sualları PDF formatında
+                yükləyə bilərsiniz.
+            </p>
+
+            <a href="files/Buta.pdf" download class="download-btn">
+                📄 PDF-i Endir
+            </a>
+
+        </section>
+    </main>
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <img src="photo/logo1.png" alt="BUTA Logo">
+
+                <h2>BUTA <span>INTERIOR DESIGN</span></h2>
+                <h4>Dizayn / Təmir / Mebel</h4>
+
+            </div>
+
+            <div class="footer-links">
+                <h3>Səhifələr</h3>
+
+                <a href="index.html">Ana Səhifə</a>
+                <a href="Haqqımızda.html">Haqqımızda</a>
+                <a href="Müsahibə.html">Müsahibələr</a>
+                <a href="Layihələr.html">Layihələr</a>
+                <a href="İnformativ-materiallar.html">İnformativ materiallar</a>
+                <a href="Əlaqə-saxlayın.html">Müraciət edin</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Əlaqə</h3>
+
+                <p>📞 +994 55 200 79 20</p>
+                <p>📍 Bakı, Azərbaycan</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 BUTA Interior Design. Bütün hüquqlar qorunur.
+        </p>
+
+    </footer>
+</body>
+
+</html>
