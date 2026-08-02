@@ -71,9 +71,11 @@ button {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--bg-secondary);
 }
+
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(var(--gold), var(--gold-light));
     border-radius: 10px;
@@ -94,6 +96,7 @@ button {
     z-index: 0;
     pointer-events: none;
 }
+
 .bg-glow-1 {
     width: 480px;
     height: 480px;
@@ -101,6 +104,7 @@ button {
     right: -120px;
     background: radial-gradient(circle, rgba(212, 175, 55, 0.28), transparent 70%);
 }
+
 .bg-glow-2 {
     width: 520px;
     height: 520px;
@@ -135,6 +139,7 @@ button {
     gap: 12px;
     transition: transform var(--transition-fast);
 }
+
 .brand:hover {
     transform: translateY(-1px);
 }
@@ -152,6 +157,7 @@ button {
     flex-direction: column;
     line-height: 1.1;
 }
+
 .brand-text strong {
     font-family: var(--font-display);
     font-size: 1.15rem;
@@ -160,12 +166,14 @@ button {
     font-weight: 700;
     text-shadow: 0 2px 14px rgba(212, 175, 55, 0.25);
 }
+
 .brand-text small {
     font-size: 0.65rem;
     letter-spacing: 3px;
     color: var(--text-secondary);
     font-weight: 500;
 }
+
 .brand-text small em {
     color: var(--gold);
     font-style: normal;
@@ -183,6 +191,7 @@ button {
     transition: all var(--transition-fast);
     white-space: nowrap;
 }
+
 .back-link:hover {
     color: var(--bg);
     background: var(--gradient-gold);
@@ -280,7 +289,7 @@ main {
     margin-bottom: 16px;
 }
 
-.info-panel > p {
+.info-panel>p {
     color: var(--text-secondary);
     font-size: 0.95rem;
     margin-bottom: 28px;
@@ -303,6 +312,7 @@ main {
     border: 1px solid rgba(212, 175, 55, 0.15);
     transition: all var(--transition-fast);
 }
+
 .info-list li:hover {
     transform: translateX(6px);
     border-color: rgba(212, 175, 55, 0.45);
@@ -323,6 +333,7 @@ main {
     box-shadow: var(--shadow-gold);
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
+
 .info-list li:hover .info-icon {
     transform: scale(1.08) rotate(-6deg);
     box-shadow: var(--shadow-gold-strong);
@@ -332,10 +343,12 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .info-list strong {
     font-size: 0.85rem;
     color: var(--text);
 }
+
 .info-list span {
     font-size: 0.85rem;
     color: var(--text-secondary);
@@ -404,8 +417,8 @@ main {
     transition: transform var(--transition-fast), color var(--transition-fast), top var(--transition-fast);
 }
 
-.floating-field textarea + .field-line + label,
-.floating-field textarea ~ label {
+.floating-field textarea+.field-line+label,
+.floating-field textarea~label {
     display: none;
 }
 
@@ -416,8 +429,8 @@ main {
     box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
 }
 
-.floating-field input:focus + label,
-.floating-field input:not(:placeholder-shown) + label {
+.floating-field input:focus+label,
+.floating-field input:not(:placeholder-shown)+label {
     top: -10px;
     left: 12px;
     font-size: 0.72rem;
@@ -434,6 +447,7 @@ main {
 .req {
     color: var(--gold);
 }
+
 .optional {
     font-size: 0.72rem;
     color: var(--text-secondary);
@@ -462,7 +476,7 @@ main {
 }
 
 .field.invalid .error-msg,
-.custom-select.invalid + .error-msg {
+.custom-select.invalid+.error-msg {
     max-height: 40px;
     opacity: 1;
     margin-top: 8px;
@@ -504,6 +518,7 @@ main {
     font-size: 0.95rem;
     color: var(--text-secondary);
 }
+
 .custom-select.has-value .select-value {
     color: var(--text);
 }
@@ -512,6 +527,7 @@ main {
     color: var(--gold-light);
     transition: transform var(--transition-fast);
 }
+
 .custom-select.open .select-arrow {
     transform: rotate(180deg);
 }
@@ -549,11 +565,13 @@ main {
     transition: all var(--transition-fast);
     cursor: pointer;
 }
+
 .select-options li i {
     color: var(--gold-light);
     width: 16px;
     text-align: center;
 }
+
 .select-options li:hover,
 .select-options li.active {
     background: rgba(212, 175, 55, 0.15);
@@ -594,9 +612,11 @@ main {
     background-position: right center;
     box-shadow: var(--shadow-gold-strong);
 }
+
 .submit-btn:hover .btn-icon {
     transform: scale(1.15) rotate(8deg);
 }
+
 .submit-btn:active {
     transform: translateY(0) scale(0.98);
 }
@@ -611,6 +631,7 @@ main {
     transform: skewX(-20deg);
     transition: left 0.6s ease;
 }
+
 .submit-btn:hover .btn-shine {
     left: 130%;
 }
@@ -629,6 +650,7 @@ main {
     justify-content: center;
     margin-top: 4px;
 }
+
 .form-note i {
     color: var(--gold-light);
 }
@@ -647,6 +669,7 @@ main {
     visibility: hidden;
     transition: all 0.35s ease;
 }
+
 .success-overlay.active {
     opacity: 1;
     visibility: visible;
@@ -661,6 +684,7 @@ main {
     transform: scale(0.85);
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
 .success-overlay.active .success-card {
     transform: scale(1);
 }
@@ -675,6 +699,7 @@ main {
     width: 100%;
     height: 100%;
 }
+
 .checkmark-circle {
     stroke: var(--gold);
     stroke-width: 3;
@@ -682,6 +707,7 @@ main {
     stroke-dashoffset: 166;
     animation: circleDraw 0.6s ease forwards;
 }
+
 .checkmark-check {
     stroke: var(--gold-light);
     stroke-width: 4;
@@ -697,6 +723,7 @@ main {
     margin-bottom: 8px;
     color: var(--text);
 }
+
 .success-card p {
     font-size: 0.9rem;
     color: var(--text-secondary);
@@ -712,29 +739,58 @@ main {
 }
 
 @keyframes fadeSlideUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    20% { transform: translateX(-6px); }
-    40% { transform: translateX(6px); }
-    60% { transform: translateX(-4px); }
-    80% { transform: translateX(4px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-6px);
+    }
+
+    40% {
+        transform: translateX(6px);
+    }
+
+    60% {
+        transform: translateX(-4px);
+    }
+
+    80% {
+        transform: translateX(4px);
+    }
 }
 
 @keyframes circleDraw {
-    to { stroke-dashoffset: 0; }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
+
 @keyframes checkDraw {
-    to { stroke-dashoffset: 0; }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 @media (max-width: 960px) {
     .contact-card-grid {
         grid-template-columns: 1fr;
     }
+
     .info-panel {
         border-right: none;
         border-bottom: 1px solid rgba(212, 175, 55, 0.18);
@@ -747,27 +803,34 @@ main {
     .header-inner {
         padding: 12px 16px;
     }
+
     .back-link span {
         display: none;
     }
+
     .brand-logo {
         width: 38px;
         height: 38px;
     }
+
     .brand-text strong {
         font-size: 1rem;
     }
+
     main {
         padding: 36px 16px 24px;
     }
+
     .form-row {
         grid-template-columns: 1fr;
         gap: 18px;
     }
+
     .contact-card {
         border-radius: var(--radius-md);
         padding: 22px 18px;
     }
+
     .contact-hero h1 {
         font-size: 2rem;
     }
