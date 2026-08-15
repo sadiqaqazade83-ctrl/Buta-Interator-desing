@@ -41,10 +41,10 @@ document.getElementById("prev").onclick = function () {
 };
 
 const videos=[
-    "video/Informativ-matireallar/1.mp4",
-    "video/Informativ-matireallar/2.mp4",
-    "video/Informativ-matireallar/3.mp4",
-    "video/Informativ-matireallar/4.mp4"
+    "video/informativ-materiallar/1.mp4",
+    "video/informativ-materiallar/2.mp4",
+    "video/informativ-materiallar/3.mp4",
+    "video/informativ-materiallar/4.mp4"
 ];
 
 

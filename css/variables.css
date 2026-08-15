@@ -1,0 +1,24 @@
+:root {
+    --bg: #050B1A;
+    --bg-secondary: #071A42;
+    --card: #17233D;
+    --gold: #D4AF37;
+    --gold-light: #F1DDA6;
+    --gold-deep: #A6791F;
+    --text: #F8FAFC;
+    --text-secondary: #C9D3E4;
+    --glass-bg: rgba(23, 35, 61, 0.55);
+    --glass-border: rgba(212, 175, 55, 0.32);
+    --glass-blur: 24px;
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --shadow-soft: 0 24px 70px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    --shadow-gold: 0 14px 38px rgba(212, 175, 55, 0.26), 0 2px 10px rgba(212, 175, 55, 0.14);
+    --shadow-gold-strong: 0 20px 54px rgba(212, 175, 55, 0.38), 0 4px 18px rgba(212, 175, 55, 0.26);
+    --transition-fast: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-med: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --gradient-gold: linear-gradient(120deg, var(--gold-deep) 0%, var(--gold) 45%, var(--gold-light) 75%, var(--gold) 100%);
+    --font-main: 'Poppins', 'Segoe UI', sans-serif;
+    --font-display: 'Playfair Display', 'Poppins', serif;
+}
